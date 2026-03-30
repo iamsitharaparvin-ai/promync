@@ -6,6 +6,7 @@
 body {
   overflow-x: hidden;
 }
+
 .Armstrong{
 font-family: 'Armstrong', sans-serif;                                              
 }
@@ -34,17 +35,17 @@ font-family: 'Armstrong', sans-serif;
 }
 .banner-slide{
    height: 100vh;
-  background: url('/assets/images/banner-img.jpg') center center/cover no-repeat;
+  background: url('assetsimagesbanner-img.jpg') center center/cover no-repeat;
   position: relative;
 }
 .slide-2{
      height: 100vh;
-  background: url('/assets/images/banner-img.jpg') center center/cover no-repeat;
+  background: url('assetsimagesbanner-img.jpg') center center/cover no-repeat;
   position: relative;
 }
 .slide-3{
      height: 100vh;
-  background: url('/assets/images/banner-img.jpg') center center/cover no-repeat;
+  background: url('assetsimagesbanner-img.jpg') center center/cover no-repeat;
   position: relative;
 }
 .Industrial{
@@ -163,7 +164,7 @@ font-family: 'Armstrong', sans-serif;
   min-height: 100vh;
 }
 .img-section{
-  background-image: url(/assets/img/blurredbg1.jpg);
+  background-image: url(assetsimgblurredbg1.jpg);
 }
  
 .object-fit-cover{
@@ -229,13 +230,19 @@ font-family: 'Armstrong', sans-serif;
   color: #fff;
 }
  
-.subscribe-box {
+.subscribe-box { 
+  display: flex;
+  justify-content: center;
+  margin: 20px;
   display: flex;
   border-bottom: 1px solid #555;
-  padding-bottom: 5px;
+
 }
+
  
 .subscribe-box input {
+  padding: 10px;
+  border-radius: 5px;
   background: transparent;
   border: none;
   outline: none;
@@ -245,6 +252,9 @@ font-family: 'Armstrong', sans-serif;
 }
  
 .subscribe-box button {
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
   background: transparent;
   border: 1px solid white;
   border-radius: 20px;
@@ -268,7 +278,25 @@ font-family: 'Armstrong', sans-serif;
 .social-icons i:hover {
   color: #ccc;
 }
+.footer-section{
+  border-top:4px solid #7fc57f ;
+}
 .footer-bottom p {
   font-size: 12px;
   color: #ccc;
 }
+p::selection{
+  color: white;
+  background-color: green;
+}
+h1::selection,
+h2::selection,
+h3::selection,
+h4::selection,
+h5::selection,
+h6::selection{
+  color: white;
+  background-color: green;
+}
+
+
