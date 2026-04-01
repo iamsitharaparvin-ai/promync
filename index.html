@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>promyc</title>
     <link rel="icon" type="/imagex-icon" href="asspngetsimagesGroup 7." />
-    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
@@ -23,7 +23,7 @@
         <nav class="navbar navbar-expand-sm navbar-dark bg-transparent custom-navbar position-absolute w-100">
             <div class="container">
                 <a class="navbar-brand" href="#">
-                    <img src="assetsimglogo.png" alt="promyc Logo" style="width:auto" />
+                    <img src="assets/img/logo.png" alt="promyc Logo" style="width:auto" />
                 </a>
                 <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navMenu">
                     <span class="navbar-toggler-icon"></span>
@@ -47,7 +47,7 @@
                         </li>
                         <li class="nav-item dropdown">
                             <a href="#" class="nav-link">
-                                Contact <img src="assetsimgdropdown.png" alt="logo"></a>
+                                Contact <img src="assets/img/dropdown.png" alt="logo"></a>
                         </li>
 
 
@@ -72,6 +72,13 @@
                 <button type="button" data-bs-target="#exampleCarousel" data-bs-slide-to="2" aria-label="Slide 3">
                 </button>
             </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
             <div class="carousel-inner">
                 <div class="carousel-item active">
                     <img src="assets/img/banner-img.jpg" class="d-block w-100 h-100 object-fit-cover" alt="Slide 1">
@@ -82,7 +89,7 @@
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img src="assets/imgbanner-img.jpg" class="d-block w-100 h-100 object-fit-cover" alt="Slide 2">
+                    <img src="assets/img/banner-img.jpg" class="d-block w-100 h-100 object-fit-cover" alt="Slide 2">
                     <div
                         class="carousel-caption d-flex flex-column justify-content-center align-items-center text-center h-100">
                         <h1>Quite A Boring Ingredient 2</h1>
@@ -107,7 +114,7 @@
     <!-- second section -->
 
     <section>
-        <div class="container d-flex justify-content-center align-items-center text-center mt-5 py-5 pb-5">
+        <div class="container d-flex justify-content-center align-items-center text-center mt-3 py-5">
             <div>
                 <h2>Promyc® as an Industrial Ingredient</h2>
                 <p class="Industrial pt-3">Promyc® is a vegan mycoprotein ingredient produced through biotechnology with
@@ -427,11 +434,11 @@
             <div class="container">
 
                 <!-- TOP ROW -->
-                <div class="row gy-4 pb-5">
+                <div class="row pb-3">
 
                     <!-- LEFT LOGO + SOCIAL -->
-                    <div class="col-lg-6 col-md-12 col-sm-12 ">
-                        <img src="assets/img/footerbrandname.png" class="footer-logo pb-5">
+                    <div class="col-lg-6 col-md-12 col-sm-12 pt-5">
+                        <img src="assets/img/footerbrandname.png" class="footer-logo pb-3">
 
                         <div class="social-icons ">
                             <i class="bi bi-linkedin"></i>
@@ -443,34 +450,61 @@
                     </div>
 
                     <!-- SUBSCRIBE -->
-                    <div class="col-lg-6 col-md-12 col-sm-12  ">
+                    <div class="col-lg-6 py-3 col-sm-12 ">
                         <h6 class="footer-heading">SUBSCRIBE FOR OUR LATEST NEWS!</h6>
 
-                        <div class="subscribe-box col-md-6 d-flex mb-3 ">
-                            <form action="#" method="post">
-                                <label for="email" class="visually-hidden ">Email address</label>
-                                <input type="email" id="email" name="email" placeholder="please Enter your email"
-                                    required>
+                        <form class="was-validated" method="post">
+                            <!-- Email + Button -->
+                            <div class="input-group mb-3 subscribe-box col-md-6">
+                                <div class=" flex-fill bd-highlight">
+                                    <input type="email"
+                                        class="form-control bg-transparent text-white border-0 border-bottom  "
+                                        placeholder="Please enter your email" required>
+                                    <div class="valid-feedback">Valid.</div>
+                                    <div class="invalid-feedback">Please fill out this field.</div>
+                                </div>
+                                <div class="p-2 flex-fill bd-highlight">
+                                    <button type="submit" class="btn btn-outline-light m-3 rounded justify-content-end">
 
-                            </form>
-                            <div class=" p-2">
-                                <button type="submit" class="boder boder-white/50 bg-dark text-white rounded">Subscribe</button>
+                                        Subscribe
+                                    </button>
+                                </div>
+                                
                             </div>
-                        </div>
+                             <!-- Checkbox -->
+                    <div class="form-check mt-2">
+                        <input class="form-check-input" type="checkbox" id="myCheck" required>
 
-                        <div class="form-check mt-2">
-                            <input class="form-check-input" type="checkbox">
-                            <label class="form-check-label small">
-                                I agree to the <a href="#" class="text-white text-decoration-none">terms and
-                                    conditions</a>
-                            </label>
+                        <label class="form-check-label small text-white " for="myCheck">
+
+                            I agree to the
+                            <a href="#" class="text-white text-decoration-none">
+
+                                terms and conditions
+                            </a>
+                        </label>
+
+
+
+
+                            <!-- Email error -->
+
+                    </div>
+
+                   
+                        <!-- Checkbox error -->
+                        <div class="invalid-feedback">
+
+                            You must agree before submitting.
                         </div>
                     </div>
 
+                    </form>
                 </div>
 
-                <div class="row ">
-                    <div class="col-lg-3 col-md-6 col-sm-12 ">
+
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 col-sm-12" >
                         <p class="footer-text">
                             Gamlestadsvagen 2 B27, 415 02<br>
                             Gothenburg, Sweden
@@ -493,7 +527,7 @@
                         </ul>
                     </div>
 
-                    <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="col-lg-3 col-md-6 col-sm-12 ">
                         <h6 class="footer-heading">SHORTCUTS</h6>
                         <ul class="footer-links">
                             <li>FAQ</li>
